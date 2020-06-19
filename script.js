@@ -2,13 +2,13 @@ var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
 // Time Given to Solve Problems
-var secondsLeft = 150;
+var secondsLeft = 5;
 
 // Start Time
 function setTime() {
   var timerInterval = setInterval(function() {
     secondsLeft--;
-    timeEl.textContent = "Time :" + secondsLeft;
+    timeEl.textContent = "Time : " + secondsLeft;
 
     // When Timer Runs Out
     if(secondsLeft === 0) {
