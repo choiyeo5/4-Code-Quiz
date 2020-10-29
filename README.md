@@ -15,5 +15,5 @@ This project provides a code quiz with multiple-choice questions, which can help
 
 ## Source URL
 
-* The URL of the deployed application: https://choiyeo5.github.io/5-Code-Quiz/
-* The URL of the GitHub repository: https://github.com/choiyeo5/5-Code-Quiz/
+* The URL of the deployed application: https://choiyeo5.github.io/4-Code-Quiz/
+* The URL of the GitHub repository: https://github.com/choiyeo5/4-Code-Quiz/
