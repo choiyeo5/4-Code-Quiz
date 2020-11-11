@@ -9,6 +9,7 @@ var answer4El = document.querySelector(".answer4");
 var resultEl = document.querySelector(".result");
 
 var nameInput = document.querySelector("#name-text");
+var highscoreButton = document.querySelector("#highscore");
 var nameForm = document.querySelector("#name-form");
 var startButton = document.querySelector("#start");
 var backButton = document.querySelector("#back");
@@ -220,6 +221,17 @@ answer4El.addEventListener("click", function(event){
         secondsRemaining = secondsRemaining - 3;
         resultEl.textContent = "Wrong!"
     }
+});
+
+// Highscore Button
+highscoreButton.addEventListener("click", function(event){
+    event.preventDefault();
+
+    mainEl.classList.add("hide");
+    initialEl.classList.add("hide");
+    questionsEl.classList.add("hide");
+
+    highscoreView();
 });
 
 startButton.addEventListener("click", startTimer);
