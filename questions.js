@@ -1,6 +1,5 @@
 var questions = [
     
-    // I could not link the two js files together, so I just put the questions variable in script.js
     {
       title: "Commonly used data types DO NOT include:",
       choices: ["strings", "booleans", "alerts", "numbers"],
