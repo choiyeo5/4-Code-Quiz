@@ -122,6 +122,7 @@ function showQuestions() {
     answer3El.textContent = "3. " + questions[ques].choices[2];
     answer4El.textContent = "4. " + questions[ques].choices[3];
     
+
 }
 
 startButton.addEventListener("click", startTimer);

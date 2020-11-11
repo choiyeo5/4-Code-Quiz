@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Top row with highscore button on left and time on right -->
-        <div class="row">
-            <div class="col-md-3 highscore">View Highscore</div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3 timer">Time: <span id="time">0</span></div>    
-        </div>
-        
-        <div class="row">
-            <!-- Start Page -->
-            <div class="col-md-12 main">
-                <h1>Coding Quiz Challenge</h1>
-                <p>When you are ready to take the quiz, press the START button.</p>
-                <button class="btn btn-primary" id="start">START</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Top row with highscore button on left and time on right -->
+            <div class="row">
+                <div class="col-md-3 highscore">View Highscore</div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3 timer">Time: <span id="time">0</span></div>    
             </div>
-
-            <!-- Questions Page -->
-            <div class="col-md-12 questions hide">
-                <h3 id="question">Question</h3>
-                <div class="answers">
-                    <button class="btn btn-primary answer1">1. </button><br>
-                    <button class="btn btn-primary answer2">2. </button><br>
-                    <button class="btn btn-primary answer3">3. </button><br>
-                    <button class="btn btn-primary answer4">4. </button>
+            
+            <div class="row">
+                <!-- Start Page -->
+                <div class="col-md-12 main">
+                    <h1>Coding Quiz Challenge</h1>
+                    <p>When you are ready to take the quiz, press the START button.</p>
+                    <button class="btn btn-primary" id="start">START</button>
                 </div>
-                <hr class="solid">
-                <p class="result">Success!</p>
-            </div>
 
-            <!-- Inputting Initials Page -->
-            <div class="col-md-12 initial hide">
-                <h2>All Done!</h2>
-                <p>Your score is <span id="final-score">0</span></p>
-                <form id="name-form" method="POST">
-                    <label for="name-text">Name:</label>
-                    <input type="text" name="name-text" id="name-text" />
-                    <button class="btn btn-primary" id="submit">Submit</button>
-                </form>
-            </div>
+                <!-- Questions Page -->
+                <div class="col-md-12 questions hide">
+                    <h3 id="question">Question</h3>
+                    <div class="answers">
+                        <button class="btn btn-primary answer1">1. </button><br>
+                        <button class="btn btn-primary answer2">2. </button><br>
+                        <button class="btn btn-primary answer3">3. </button><br>
+                        <button class="btn btn-primary answer4">4. </button>
+                    </div>
+                    <hr class="solid">
+                    <p class="result">Success!</p>
+                </div>
 
-            <!-- View Highscore Page -->
-            <div class="col-md-12 highscores hide">
-                <h2>Highscores</h2>
-                <ol id="highscore-list">
-                    <li>Yeon Soo Choi - 23</li>
-                    <li>Yeon Soo Cerere - 20</li>
-                </ol>
-                <button class="btn btn-primary" id="back">Go Back</button>
-                <button class="btn btn-primary" id="clear">Clear Highscores</button>
+                <!-- Inputting Initials Page -->
+                <div class="col-md-12 initial hide">
+                    <h2>All Done!</h2>
+                    <p>Your score is <span id="final-score">0</span></p>
+                    <form id="name-form" method="POST">
+                        <label for="name-text">Name:</label>
+                        <input type="text" name="name-text" id="name-text" />
+                        <button class="btn btn-primary" id="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- View Highscore Page -->
+                <div class="col-md-12 highscores hide">
+                    <h2>Highscores</h2>
+                    <ol id="highscore-list">
+                        <li>Yeon Soo Choi - 23</li>
+                        <li>Yeon Soo Cerere - 20</li>
+                    </ol>
+                    <button class="btn btn-primary" id="back">Go Back</button>
+                    <button class="btn btn-primary" id="clear">Clear Highscores</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Javascript Files -->
-    <script src="script.js"></script>
-    <script src="questions.js"></script>
-</body>
+        <!-- Javascript Files -->
+        <script src="script.js"></script>
+        <script src="questions.js"></script>
+    </body>
 </html>
