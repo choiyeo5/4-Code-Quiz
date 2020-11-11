@@ -38,8 +38,8 @@ var eachTime = 15;
 var ques = 0;
 var score = 0;
 var startTime = 0;
-var names = ["Christine", "Yeon Soo"];
-var scores = [23, 20];
+var names = [];
+var scores = [];
 
 // Start the timer and bring up the Questions Page
 function startTimer() {
@@ -84,7 +84,7 @@ nameForm.addEventListener("submit", function(event) {
 
     for (var j=0; j<names.length; j++) {
         if (scores[j] < score) {
-            index = j-1;
+            index = j;
             console.log(index);
         }
     }
